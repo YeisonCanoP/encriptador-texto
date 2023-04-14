@@ -49,19 +49,19 @@
     flex-grow: 0;
 }
 .botones {
-    display: flex;
+    display:flex;
     flex-grow: row;
-    align-items: flex-start;
-    padding: 2%, 0;
-    position: absolute;
-    width: 80%;
-    left: 10%;
-    top: 84%;
+    align-items:flex-start;
+    padding:2%, 0;
+    position:absolute;
+    width:80%;
+    left:10%;
+    top:84%;
 }
 .btn-encriptar {
     align-items: center;
     justify-content: center;
-    padding: 17px;
+    padding:17px;
     gap:7px;
     width:19%;
     background-color:#03045e;
@@ -92,4 +92,7 @@
     line-height: 19px;
     text-align: center;
     color: #0d1b2a;
+}
+.btn-desencriptar,.btn-encriptar {
+    
 }
