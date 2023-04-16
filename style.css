@@ -7,7 +7,7 @@
 
 .texto {
     position: absolute;
-    width: 42%;
+    width: 45%;
     height: 60%;
     left: 10%;
     top: 14%;
@@ -15,7 +15,7 @@
     font-family: "Lucida Bright";
     font-style: italic;
     font-size: 2em;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 140%;
     background-color: #caf0f8;
 }
@@ -74,7 +74,7 @@
     gap: 7px;
     width: 25%;
     background-color: #03045e;
-    border-radius: 21px;
+    border-radius: 4px 4px 20px 20px;
     font-family: "Courier";
     font-size: 18px;
     line-height: 19px;
@@ -100,7 +100,7 @@
     background-color: #52b69a;
     border: 1px solid #34a0a4;
     font-family: "Courier";
-    border-radius: 21px;
+    border-radius: 4px 4px 20px 20px;
     font-weight: 400;
     font-size: 18px;
     line-height: 19px;
@@ -113,20 +113,22 @@
 }
 
 .btn-desencriptar:hover {
-    transform: scale(1.13)
+    transform: scale(1.13);
+    background-color: #34a0a4;
 }
 
 .btn-encriptar:hover {
     transform: scale(1.13);
+    background-color: #023e8a;
 }
 
 .encriptado {
     display: flex;
     justify-content: center;
     position: absolute;
-    width: 29%;
+    width: 25%;
     height: 86%;
-    left: 63%;
+    left: 66%;
     top: 7%;
     transform: scale(1.12);
     background: #d3e8ec;
