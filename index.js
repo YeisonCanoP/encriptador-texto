@@ -2,24 +2,26 @@ function encriptar() {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
-    let muñeco = document.getElementById("imagen-muñecos");
+    let muñeco= document.getElementById("imagen-muñeco")
+
 
     let textoCifrado = texto
-        .replace(/a/gi, "ai")
-        .replace(/e/gi, "enter")
-        .replace(/i/gi, "imes")
-        .replace(/o/gi, "ober")
-        .replace(/u/gi, "ufat");
+        .repleace(/a/gi, "ai")
+        .repleace(/e/gi, "enter")
+        .repleace(/i/gi, "imes")
+        .repleace(/o/gi, "ober")
+        .repleace(/u/gi, "ufat");
 
     if (texto.length != 0) {
-        document.getElementById("texto").value = textoCifrado;
+        texto = textoCifrado;
         tituloMensaje.textContent = "Texto encriptado con exito.";
         parrafo.textContent = "";
-        muñeco.src ="imagenes/security.png"; 
+        muñeco.src="imagenes/online-store.png"; 
     }
     else {
-        muñeco.src ="imagenes/Muñeco.png";
+        muñeco.src="imagenes/Muñeco.png";
         alert("Debes ingresar algun texto.");
     }
+
 }
 
