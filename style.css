@@ -1,3 +1,7 @@
+body {
+    background-color: #caf0f8;
+}
+
 .contenedor {
     position: relative;
     width: 100%;
@@ -96,7 +100,7 @@
     justify-content: center;
     flex-direction: row;
     box-sizing: border-box;
-    padding: 19px;
+    padding: 19.3px;
     gap: 7px;
     width: 25%;
     background-color: #52b69a;
@@ -115,6 +119,7 @@
     position: relative;
     left: -5%;
 }
+
 .btn-copiar {
     align-items: flex-start;
     display: flex;
@@ -150,10 +155,12 @@
     transform: scale(1.13);
     background-color: #023e8a;
 }
+
 .btn-copiar:hover {
     transform: scale(1.13);
     background-color: #ffc600;
 }
+
 .encriptado {
     display: flex;
     justify-content: center;
@@ -214,10 +221,11 @@
 
 @media (max-width:800px) {
     .contenedor {
-        display: flex;
+        display: block;
         flex-direction: row;
-        padding: 6%;
+        padding: 8%;
         flex-wrap: wrap;
+        padding: 20px;
     }
 
     .zonaEncriptar {
@@ -238,42 +246,53 @@
     }
 
     .terminos p {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .botones {
         width: 80%;
         left: 10%;
         top: 73%;
+        left: 8%;
     }
 
-    .btn-encriptar,
-    .btn-desencriptar {
-        width: 48%;
-        border-radius: 21px;
-    }
+.btn-encriptar,
+.btn-desencriptar {
+    display: flex;
+    width: 49%;
+    border-radius: 20px;
+    margin:10px;
+}
 
-    .btn-encriptar:hover,
-    .btn-desencriptar:hover {
-        transform: scale(1.1);
-    }
+.btn-copiar {
+    position: absolute;
+    width: 40%;
+    border-radius: 21px;
+    top: 95%;
+    left: 14%;
+}
 
-    .encriptado {
-        width: 80%;
-        height: 15%;
-        left: 15%;
-        top: 85%;
+.btn-encriptar:hover,
+.btn-desencriptar:hover {
+    transform: scale(1.1);
+}
 
-    }
+.encriptado {
+    width: 74%;
+    height: 20%;
+    left: 6%;
+    margin: 1px;
+    top: 95%;
+}
 
-    .mensaje-encriptado {
-        width: 100%;
-        top: 5%;
-    }
+.mensaje-encriptado {
+    width: 100%;
+    top: 5%;
+}
 
-    .encriptado img {
-        top: 0%;
-        display: none;
-        visibility: hidden;
-    }
+.encriptado img {
+    top: 0%;
+    display: none;
+    visibility: hidden;
+}
 }
