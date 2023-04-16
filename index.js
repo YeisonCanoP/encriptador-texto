@@ -50,4 +50,17 @@ function desencriptar () {
         parrafo.textContent = "Ingresa el texto que deseas Encriptar o Desencriptar"
     }
 }
-
+function copiar() {
+    var texto=document.getElementById("texto").value;
+    var elementoTemporal= document.createElement("textarea");
+    var botonEncriptar= document.getElementById("btn-copiar");
+    elementoTemporal.value= texto;
+    document.body.appendChild(elementoTemporal);
+    elementoTemporal.select();
+    document.execCommand("copy");
+    document.body.removeChild(elementoTemporal);
+    botonEncriptar.innerText = "Copiado";
+    setTimeout(function() {
+        botonEncriptar.innerText = "Copiar";
+      }, 1000);
+}
