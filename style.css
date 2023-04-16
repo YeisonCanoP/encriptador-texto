@@ -7,10 +7,10 @@
 
 .texto {
     position: absolute;
-    width: 45%;
-    height: 60%;
-    left: 10%;
-    top: 14%;
+    width: 53%;
+    height: 70%;
+    left: 6.5%;
+    top: 7.5%;
     border: none;
     font-family: "Lucida Bright";
     font-style: italic;
@@ -38,7 +38,7 @@
     gap: 9px;
     position: absolute;
     width: 80%;
-    left: 10%;
+    left: 8%;
     top: 80%;
 }
 
@@ -64,7 +64,7 @@
     position: absolute;
     width: 80%;
     left: 10%;
-    top: 84%;
+    top: 86%;
 }
 
 .btn-encriptar {
@@ -83,9 +83,11 @@
     box-sizing: border-box;
     border: 1px solid #0077b6;
     cursor: pointer;
-    margin-right: 40px;
+    margin-right: 30px;
     transition: 0.5s;
     box-shadow: 0px 13px 20px 1px rgba(0, 0, 0, 0.5);
+    position: relative;
+    left: -4%;
 }
 
 .btn-desencriptar {
@@ -107,9 +109,36 @@
     text-align: center;
     color: #0d1b2a;
     cursor: pointer;
-    margin-left: 40px;
+    margin-left: 30px;
     transition: 0.5s;
     box-shadow: 0px 13px 20px 1px rgba(0, 0, 0, 0.5);
+    position: relative;
+    left: -5%;
+}
+.btn-copiar {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 19px;
+    gap: 3px;
+    width: 10%;
+    background-color: #ffba08;
+    border: 1px solid #faa307;
+    font-family: "Courier";
+    border-radius: 4px 4px 20px 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0d1b2a;
+    cursor: pointer;
+    margin-left: 30px;
+    transition: 0.5s;
+    box-shadow: 0px 9px 15px -1px rgba(0, 0, 0, 0.5);
+    position: relative;
+    left: -4%;
 }
 
 .btn-desencriptar:hover {
@@ -121,7 +150,10 @@
     transform: scale(1.13);
     background-color: #023e8a;
 }
-
+.btn-copiar:hover {
+    transform: scale(1.13);
+    background-color: #ffc600;
+}
 .encriptado {
     display: flex;
     justify-content: center;
