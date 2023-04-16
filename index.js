@@ -2,8 +2,7 @@ function encriptar() {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
-    let muñeco= document.getElementById("imagen-muñeco")
-
+    let muñeco = document.getElementById("imagen-muñeco");
 
     let textoCifrado = texto
         .repleace(/a/gi, "ai")
@@ -16,10 +15,9 @@ function encriptar() {
         texto = textoCifrado;
         tituloMensaje.textContent = "Texto encriptado con exito.";
         parrafo.textContent = "";
-        muñeco.src="imagenes/online-store.png"; 
+        muñeco.src = "imagenes/online-store.png";
     }
     else {
-        muñeco.src="imagenes/Muñeco.png";
         alert("Debes ingresar algun texto.");
     }
 
